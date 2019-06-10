@@ -1,8 +1,9 @@
+/* eslint-disable import/no-cycle */
 import axios from 'axios';
 import store from '../store';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3333',
+  baseURL: 'https://adonis-omnistack.herokuapp.com/',
 });
 
 api.interceptors.request.use((config) => {
